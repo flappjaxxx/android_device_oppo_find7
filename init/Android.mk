@@ -1,4 +1,4 @@
-ifeq ($(TARGET_INIT_VENDOR_LIB),libinit_find7)
+ifeq ($(TARGET_INIT_VENDOR_LIB),libinit_bacon)
 
 LOCAL_PATH := $(call my-dir)
 
@@ -8,7 +8,7 @@ LOCAL_C_INCLUDES := system/core/init
 LOCAL_CFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
 LOCAL_SRC_FILES := init_find7.c
 
-LOCAL_MODULE := libinit_find7
+LOCAL_MODULE := libinit_bacon
 include $(BUILD_STATIC_LIBRARY)
 
 endif

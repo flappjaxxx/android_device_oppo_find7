@@ -6,14 +6,14 @@
 # Include common makefile
 $(call inherit-product, device/oppo/msm8974-common/common.mk)
 
-LOCAL_PATH := device/oppo/find7
+LOCAL_PATH := device/oneplus/bacon
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/init.find7.rc:root/init.qcom.rc \
-    $(LOCAL_PATH)/configs/fstab.find7:root/fstab.qcom \
+    $(LOCAL_PATH)/configs/init.bacon.rc:root/init.qcom.rc \
+    $(LOCAL_PATH)/configs/fstab.bacon:root/fstab.qcom \
     $(LOCAL_PATH)/configs/twrp.fstab:recovery/root/etc/twrp.fstab
 
 #sdcard permissions fix

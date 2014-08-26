@@ -1,12 +1,11 @@
 # inherit common device tree
 -include device/oppo/msm8974-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/oppo/find7
+LOCAL_PATH := device/oneplus/bacon
 
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := find7
-TARGET_OTA_ASSERT_DEVICE := find7a,FIND7
-
+TARGET_BOOTLOADER_BOARD_NAME := bacon
+TARGET_OTA_ASSERT_DEVICE := bacon,A0001
 # Partition info
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00F00000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00F00000
@@ -18,9 +17,9 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
 #Libinit - handle find7a vs find7s
-TARGET_INIT_VENDOR_LIB := libinit_find7
+TARGET_INIT_VENDOR_LIB := libinit_bacon
 
 # Recovery:Start
 
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/configs/fstab.find7
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/configs/fstab.bacon
 
