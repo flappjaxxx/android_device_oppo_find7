@@ -24,6 +24,12 @@
     "revision": "android-4.4"
   },
   {
+    "remote": "github",
+    "repository": "TheMuppets/proprietary_vendor_oppo",
+    "target_path": "vendor/oppo",
+    "revision": "cm-11.0"
+  },
+  {
     "remote": "omnirom",
     "repository": "android_kernel_oppo_msm8974",
     "target_path": "kernel/oppo/msm8974",
